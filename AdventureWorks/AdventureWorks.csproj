@@ -42,6 +42,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -53,8 +54,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ADO.NET\Agreement.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\ModelRepository\AddressRepository.cs" />
+    <Compile Include="Repository\ModelRepository\BusinessEntityAddressRepository.cs" />
+    <Compile Include="Repository\ModelRepository\BusinessEntityRepository.cs" />
+    <Compile Include="Repository\ModelRepository\CustomerRepository.cs" />
+    <Compile Include="Repository\ModelRepository\PersonPhoneRepository.cs" />
+    <Compile Include="Repository\ModelRepository\ProductCategoryRepository.cs" />
+    <Compile Include="Repository\ModelRepository\ProductDescriptionRepository.cs" />
+    <Compile Include="Repository\ModelRepository\ProductInventoryRepository.cs" />
+    <Compile Include="Repository\ModelRepository\ProductListPriceHistoryRepository.cs" />
+    <Compile Include="Repository\ModelRepository\ProductPhotoRepository.cs" />
+    <Compile Include="Repository\ModelRepository\ProductProductPhotoRepository.cs" />
+    <Compile Include="Repository\ModelRepository\ProductRepository.cs" />
+    <Compile Include="Repository\ModelRepository\SalesOrderDetailRepository.cs" />
+    <Compile Include="Repository\ModelRepository\SalesOrderHeaderRepository.cs" />
+    <Compile Include="Repository\ModelRepository\SalesPersonRepository.cs" />
+    <Compile Include="Repository\ModelRepository\SalesTerritoryRepository.cs" />
+    <Compile Include="Repository\ModelRepository\ShoppingCartItemRepository.cs" />
+    <Compile Include="Repository\ModelRepository\StateProvinceRepository.cs" />
+    <Compile Include="Repository\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
