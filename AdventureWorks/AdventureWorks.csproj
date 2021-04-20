@@ -53,37 +53,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ADO.NET\Agreement.cs" />
-    <Compile Include="AdventureWorks2019.cs" />
-    <Compile Include="BillOfMaterials.cs" />
-    <Compile Include="Culture.cs" />
-    <Compile Include="Illustration.cs" />
-    <Compile Include="Location.cs" />
-    <Compile Include="Product.cs" />
-    <Compile Include="ProductCategory.cs" />
-    <Compile Include="ProductCostHistory.cs" />
-    <Compile Include="ProductDescription.cs" />
-    <Compile Include="ProductDocument.cs" />
-    <Compile Include="ProductInventory.cs" />
-    <Compile Include="ProductListPriceHistory.cs" />
-    <Compile Include="ProductModel.cs" />
-    <Compile Include="ProductModelIllustration.cs" />
-    <Compile Include="ProductModelProductDescriptionCulture.cs" />
-    <Compile Include="ProductPhoto.cs" />
-    <Compile Include="ProductProductPhoto.cs" />
-    <Compile Include="ProductReview.cs" />
-    <Compile Include="ProductSubcategory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScrapReason.cs" />
-    <Compile Include="TransactionHistory.cs" />
-    <Compile Include="TransactionHistoryArchive.cs" />
-    <Compile Include="UnitMeasure.cs" />
-    <Compile Include="WorkOrder.cs" />
-    <Compile Include="WorkOrderRouting.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\D\Entities.csproj">
+      <Project>{38d8d405-f5e3-4c46-a9b6-058ef4087897}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,6 +10,7 @@ namespace AdventureWorks
         public AdventureWorksContext()
             : base("name=AdventureWorksContext")
         {
+
         }
 
         public virtual DbSet<BillOfMaterials> BillOfMaterials { get; set; }
@@ -36,6 +37,51 @@ namespace AdventureWorks
         public virtual DbSet<WorkOrder> WorkOrder { get; set; }
         public virtual DbSet<WorkOrderRouting> WorkOrderRouting { get; set; }
         public virtual DbSet<ProductDocument> ProductDocument { get; set; }
+
+
+        public virtual DbSet<Department> Department { get; set; }
+        public virtual DbSet<Employee> Employee { get; set; }
+        public virtual DbSet<EmployeeDepartmentHistory> EmployeeDepartmentHistory { get; set; }
+        public virtual DbSet<EmployeePayHistory> EmployeePayHistory { get; set; }
+        public virtual DbSet<JobCandidate> JobCandidate { get; set; }
+        public virtual DbSet<Shift> Shift { get; set; }
+        public virtual DbSet<Address> Address { get; set; }
+        public virtual DbSet<AddressType> AddressType { get; set; }
+        public virtual DbSet<BusinessEntity> BusinessEntity { get; set; }
+        public virtual DbSet<BusinessEntityAddress> BusinessEntityAddress { get; set; }
+        public virtual DbSet<BusinessEntityContact> BusinessEntityContact { get; set; }
+        public virtual DbSet<ContactType> ContactType { get; set; }
+        public virtual DbSet<CountryRegion> CountryRegion { get; set; }
+        public virtual DbSet<EmailAddress> EmailAddress { get; set; }
+        public virtual DbSet<Password> Password { get; set; }
+        public virtual DbSet<Person> Person { get; set; }
+        public virtual DbSet<PersonPhone> PersonPhone { get; set; }
+        public virtual DbSet<PhoneNumberType> PhoneNumberType { get; set; }
+        public virtual DbSet<StateProvince> StateProvince { get; set; }
+        public virtual DbSet<ProductVendor> ProductVendor { get; set; }
+        public virtual DbSet<PurchaseOrderDetail> PurchaseOrderDetail { get; set; }
+        public virtual DbSet<PurchaseOrderHeader> PurchaseOrderHeader { get; set; }
+        public virtual DbSet<ShipMethod> ShipMethod { get; set; }
+        public virtual DbSet<Vendor> Vendor { get; set; }
+        public virtual DbSet<CountryRegionCurrency> CountryRegionCurrency { get; set; }
+        public virtual DbSet<CreditCard> CreditCard { get; set; }
+        public virtual DbSet<Currency> Currency { get; set; }
+        public virtual DbSet<CurrencyRate> CurrencyRate { get; set; }
+        public virtual DbSet<Customer> Customer { get; set; }
+        public virtual DbSet<PersonCreditCard> PersonCreditCard { get; set; }
+        public virtual DbSet<SalesOrderDetail> SalesOrderDetail { get; set; }
+        public virtual DbSet<SalesOrderHeader> SalesOrderHeader { get; set; }
+        public virtual DbSet<SalesOrderHeaderSalesReason> SalesOrderHeaderSalesReason { get; set; }
+        public virtual DbSet<SalesPerson> SalesPerson { get; set; }
+        public virtual DbSet<SalesPersonQuotaHistory> SalesPersonQuotaHistory { get; set; }
+        public virtual DbSet<SalesReason> SalesReason { get; set; }
+        public virtual DbSet<SalesTaxRate> SalesTaxRate { get; set; }
+        public virtual DbSet<SalesTerritory> SalesTerritory { get; set; }
+        public virtual DbSet<SalesTerritoryHistory> SalesTerritoryHistory { get; set; }
+        public virtual DbSet<ShoppingCartItem> ShoppingCartItem { get; set; }
+        public virtual DbSet<SpecialOffer> SpecialOffer { get; set; }
+        public virtual DbSet<SpecialOfferProduct> SpecialOfferProduct { get; set; }
+        public virtual DbSet<Store> Store { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

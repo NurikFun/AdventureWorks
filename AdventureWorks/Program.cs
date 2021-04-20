@@ -1,4 +1,5 @@
 ﻿using AdventureWorks.ADO.NET;
+using Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,9 +16,9 @@ namespace AdventureWorks
 
             agreement.ClientAgreement("888866664321");
 
-            using (AdventureWorksContext adventureWorks = new AdventureWorksContext())
+            using (AdventureWorkContext adventureWorks = new AdventureWorkContext())
             {
-                foreach (Product product in adventureWorks.Product)
+                foreach (Product product in adventureWorks.Products)
                 {
                     Console.WriteLine($"Name : {product.Name}, Product Number : {product.ProductNumber}");
                 }
